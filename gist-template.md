@@ -12,39 +12,25 @@ The following regular expression can be broken up in three sections. The first s
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
+- [Capturing Group](#capturing-group)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
-
-## Regex Components
 
 ### Anchors
 
+Anchors have special meaning in regular expressions. They do not match any character. Instead, they match a position before or after characters. The ^ anchor matches the beginning of the text. The $ anchor matches the end of the text.
+
 ### Quantifiers
 
-### OR Operator
+Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found.
 
 ### Character Classes
 
-### Flags
+With a “character class”, also called “character set”, you can tell the regex engine to match only one out of several characters. Simply place the characters you want to match between square brackets.
 
-### Grouping and Capturing
+### Capturing Group
 
-### Bracket Expressions
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
+Parentheses group the regex between them. They capture the text matched by the regex inside them into a numbered group that can be reused with a numbered backreference. They allow you to apply regex operators to the entire grouped regex.
 
 ## Author
 
